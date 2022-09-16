@@ -1,0 +1,25 @@
+pipeline {
+    agent none
+
+    stages{
+
+        stage {
+            step {
+                sh 'mvn build'
+            }
+        
+             }
+        stage {
+            step {
+                sh 'mvn clean test'
+            }
+        }
+        stage {
+            step {
+                sh 'mvn clean package'
+            }
+        }
+
+
+    }
+}
