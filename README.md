@@ -32,7 +32,7 @@ Note: Try `localhost:8080/api` as well!
 ## Unit testing
 The test class `HelloControllerTest` contains a unit test to ensure the application returns the string "Hello World!"
 
-~~~
+~~~..
 @Test
     public void getHello() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
